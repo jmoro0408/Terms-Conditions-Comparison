@@ -12,6 +12,7 @@ langchain = "^0.0.313"
 chromadb = "^0.4.14"
 openai = "^0.28.1"
 jupyter = "^1.0.0"
+docx2txt = "^0.8"
 
 
 [build-system]
