@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "terms-conditions-comparison"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "terms_conditions_comparison"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+langchain = "^0.0.313"
+chromadb = "^0.4.14"
+openai = "^0.28.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
