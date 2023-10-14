@@ -1,0 +1,35 @@
+The main themes identified from the provided list of documents are as follows:
+
+1. Cancellation Policy: The documents provide information on how to cancel orders, the deadline for cancellation, and the effects of cancellation.
+
+2. Account Usage: The documents emphasize the importance of maintaining the confidentiality and security of an Apple ID account, as well as the user's responsibility in case of unauthorized use.
+
+3. Privacy Policy: The use of Apple's services is subject to their privacy policy, which can be accessed separately.
+
+4. Services and Content Usage Rules: The documents provide rules and guidelines for the use of Apple's services and content, including limitations on commercial use, device and Apple ID restrictions, and prohibitions on manipulating play counts or circumventing security technology.
+
+5. Access and Usage Restrictions: The documents outline restrictions on accessing and modifying Apple's software, as well as limitations on the number of devices and computers that can be used for DRM-protected content.
+
+6. Content Sales and Rentals: The documents specify the terms and conditions for purchasing, renting, and using audio and video content, including limitations on the number of devices, rental duration, and burning content to discs.
+
+7. App Store Content: The documents explain the terms for downloading and using apps from the App Store, including in-app purchases, subscriptions, and licensing for commercial enterprises.
+
+8. Apple Music: The documents describe the terms for streaming music on Apple Music, including limitations on the number of devices and the difference between individual and family memberships.
+
+9. Apple Arcade: The documents outline the terms for downloading and accessing apps through Apple Arcade, including the requirement for a valid trial or subscription and the loss of access if the subscription ends.
+
+10. Apple TV Content: The documents specify the terms for streaming video content on Apple TV, including the number of devices that can stream simultaneously and a reference to additional usage rules.
+
+11. Downloads: The documents mention limitations on the amount of content that can be downloaded, expiration of downloaded content, and the ability to redownload previously acquired content.
+
+12. Subscriptions: The documents briefly mention subscriptions, but do not provide specific details about their terms and conditions.
+
+13. Paid Subscriptions: The documents discuss the terms and conditions related to paid subscriptions, including automatic renewal, cancellation, price changes, payment methods, and free trials.
+
+14. Content and Service Availability: The documents mention that certain content and services may not be available in all countries or when traveling outside of the home country, except if required by law.
+
+15. Third-Party Devices and Equipment: The documents state that not all features of the services may be available on non-Apple devices and that certain services may require the use of third-party equipment, subject to the terms and conditions of such equipment.
+
+16. Submissions to Services: The documents outline guidelines for submitting materials such as comments, ratings, reviews, pictures, videos, and podcasts. It also mentions that Apple may use the submitted materials for marketing and internal purposes, and reserves the right to remove or edit any submitted material.
+
+17. Prohibited Use of Services: The documents specify certain activities that are not allowed when using the services, such as posting materials without permission or infringing on third-party rights, posting objectionable or harmful content, sharing personal or confidential information of
