@@ -15,6 +15,7 @@ jupyter = "^1.0.0"
 docx2txt = "^0.8"
 python-dotenv = "^1.0.0"
 tiktoken = "^0.5.1"
+lark = "^1.1.7"
 
 
 [build-system]
