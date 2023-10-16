@@ -1,0 +1,11 @@
+- Apple's Media Services Terms and Conditions govern the use of services like the App Store, Apple Music, Apple TV, and others.
+- Users need compatible hardware, software, and internet access to use these services and must be at least 13 years old.
+- All transactions are electronic contracts between the user and Apple, or the user and a third-party content provider, and can be paid for through various methods.
+- Apple's Family Sharing feature allows up to six family members to share eligible subscriptions and content, with an organizer who must be 18 years or older.
+- The Ask to Buy feature allows organizers to approve transactions initiated by a family member under 18.
+- Users can only belong to one family at a time and join any family no more than twice per year for Family Sharing.
+- Apps are licensed, not sold, to users, and some apps may offer in-app purchases.
+- Some content on Apple services are acquired from third-party providers, who are solely responsible for such content.
+- The iCloud Music Library is an Apple Music feature that allows users to access their music across their Apple devices, holding up to 100,000 songs.
+- The agreement covers copyright issues, termination and suspension of services, and liability limitations, and is governed by the laws of the State of California, unless the user resides in a different country.
+- Apple reserves the right to modify the agreement at any time and the services and content are protected by intellectual property laws and are intended for personal, non-commercial use.

@@ -1,0 +1,12 @@
+- The Apple Media Services Terms and Conditions form a contract between the user and Apple and govern the use of services like the App Store, Apple Arcade, Apple Music, and Apple TV.
+- The terms cover payment conditions, subscriptions, content availability, third-party devices, and user submissions. Users are responsible for any uncollected payment amounts.
+- Users need compatible hardware and software to use the services and should be at least 13 years old.
+- Apple's Family Sharing feature allows up to six family members to share eligible subscriptions and content, with the organizer needing to be 18 years or older.
+- Apple offers a Series Pass and Multi-Pass for purchasing TV content, and if a content provider delivers fewer episodes than planned, the value is credited to the user's Apple ID.
+- Apps are licensed to users, and the App Provider is solely responsible for its content, warranties, and any claims that the user may have.
+- In-app purchases are available for certain apps, and Apple is responsible for maintenance and support for Apple Apps only.
+- Third-party content is acquired directly from the provider, who is responsible for the content, any warranties, and any claims.
+- The iCloud Music Library is an Apple Music feature that allows users to access their music, playlists, and videos across all Apple Music-enabled devices, storing up to 100,000 songs.
+- If an Apple Music membership ends, access to the iCloud Music Library will be lost.
+- Apple reserves the right to modify the agreement and the services, and is not responsible for third-party materials.
+- The document also outlines copyright infringement procedures, termination and suspension of services, liability limitations, and governing law.
