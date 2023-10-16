@@ -1,16 +1,9 @@
-- The terms and conditions govern the use of iTunes Store, Mac App Store, App Store, and iBooks Store, and users must agree to these to use the services.
-- Users are responsible for payments of all products, including any additional fees. If a product becomes unavailable after purchase but before download, a refund is likely.
-- iTunes reserves the right to alter product prices at any time and users can cancel orders within 14 days, except for iTunes Gifts which are non-refundable once redeemed.
-- Users can share eligible products with family members through services like Family Sharing and are responsible for maintaining account confidentiality.
-- iTunes will not be held liable for any losses from unauthorized account use.
-- Users can download purchased content onto up to 10 devices, but no more than five can be iTunes-authorized computers.
-- The service offers iTunes Match, a subscription service that requires an annual fee and allows access to music libraries from any associated device.
-- Users must use the content for personal, non-commercial use, without violating copyright laws or tampering with security measures.
-- Apple is not responsible for third-party materials or objectionable content encountered by users on the service.
-- All content is proprietary and protected by copyright laws. Users may not reproduce, modify, rent, lease, loan, sell, distribute, or create derivative works based on the service.
-- Apple can change, suspend, remove, or disable access to any iTunes products or services without notice and may terminate non-compliant users' accounts and/or access to services.
-- Users grant iTunes a worldwide, nonexclusive license to use submitted materials without compensation and iTunes is not responsible for third-party materials or websites.
-- Terms for in-app purchases, subscriptions, use of location data for personalized recommendations, and use of iBooks Store products are also covered in the agreement.
-- Applications from the Mac App Store and App Store are for personal, non-commercial use and updates can only be managed through the Mac App Store.
-- iTunes is responsible for maintenance and support services related to these products, and these applications are licensed, not sold.
-- The agreement was last updated on January 2, 2015.
+
+- This agreement sets out the terms and conditions for the use of the iTunes Store, Mac App Store, App Store and iBooks Store, including payments, taxes, refunds, 1-Click purchasing, gift certificates, iTunes cards and codes, allowances, content codes, gifts, safety information, and pre-orders. 
+- Family Sharing allows up to six members to share eligible iTunes, App Store, Mac App Store, and iBooks Store products. 
+- When purchasing and downloading iTunes Products, you must authenticate your Account using your Apple ID and password or Touch ID. 
+- By opting in to the Genius feature, you consent to the use of your information as described in Apple’s Privacy Policy. 
+- You are authorised to use iTunes Products on five computers with the iTunes application installed at any time, and store iTunes Products from up to five different Accounts at a time on compatible devices. 
+- Apple and its licensors reserve the right to change, suspend, remove, or disable access to any iTunes Products, content, or other materials without notice. 
+- This Agreement outlines the terms and conditions of using the iTunes Service, including third-party materials, intellectual property, album cover art, and termination. 
+- You
