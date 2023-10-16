@@ -32,5 +32,4 @@ https://github.com/gkamradt/langchain-tutorials/blob/main/data_generation/5%20Le
 
 ## Davinci
 
-Using davinci in comparison (rather than gtp3-turbo) seems to work better
-need to try this model with summairsation as well
+davinci in summarisation doesnt work well
