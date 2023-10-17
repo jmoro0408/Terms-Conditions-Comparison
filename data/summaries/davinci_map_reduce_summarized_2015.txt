@@ -1,9 +1,12 @@
 
-- This agreement sets out the terms and conditions for the use of the iTunes Store, Mac App Store, App Store and iBooks Store, including payments, taxes, refunds, 1-Click purchasing, gift certificates, iTunes cards and codes, allowances, content codes, gifts, safety information, and pre-orders. 
-- Family Sharing allows up to six members to share eligible iTunes, App Store, Mac App Store, and iBooks Store products. 
-- When purchasing and downloading iTunes Products, you must authenticate your Account using your Apple ID and password or Touch ID. 
-- By opting in to the Genius feature, you consent to the use of your information as described in Apple’s Privacy Policy. 
-- You are authorised to use iTunes Products on five computers with the iTunes application installed at any time, and store iTunes Products from up to five different Accounts at a time on compatible devices. 
-- Apple and its licensors reserve the right to change, suspend, remove, or disable access to any iTunes Products, content, or other materials without notice. 
-- This Agreement outlines the terms and conditions of using the iTunes Service, including third-party materials, intellectual property, album cover art, and termination. 
-- You
+- This agreement outlines the terms and conditions of using the iTunes Store Service, Mac App Store, App Store and iBooks Store in the United Kingdom. 
+- It explains that only persons aged 13 or older can create accounts, and that accounts for persons under 13 can be created by a parent or legal guardian using Family Sharing. 
+- It outlines payment, taxes, and refund policies, as well as the right of cancellation and the effects of cancellation. 
+- It explains the usage rules for iTunes products, including iTunes Plus Products, Film Rentals, and Season Passes and Multi-Passes. 
+- It outlines the security measures in place for the Service and Content, as well as the requirements for viewing HD Products. 
+- It explains the restrictions on using and exporting the Licensed Application, and the responsibility of the Publisher for any claims related to the iBooks Store Products. 
+- It states that any Submissions to the Service are subject to the Usage Rules, and that iTunes has the right to monitor materials submitted by users. 
+- It outlines the rights and responsibilities of users in relation to these terms, and that any infringement of intellectual property rights may result in civil and criminal penalties. 
+- It states that iTunes reserves the right to modify, suspend, or discontinue the Stores at any time without liability, and to disclose any information to law enforcement authorities. 
+- It explains that with respect to the Mac App Store and App Store Products, iTunes is selling a license to use the software, and that In-App Purchases may also be available. 
+- It states that the agreement is governed by English law, and that notices become effective immediately.

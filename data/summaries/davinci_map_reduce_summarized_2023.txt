@@ -1,13 +1,13 @@
 
-- Apple's Services can be used to buy, get, license, rent or subscribe to Content
-- Payments, taxes, and refunds are handled through the user's selected payment method
-- An Apple ID is required to use the Services and Content, and must be age 13 or older
-- Usage Rules must be followed, and Apple may monitor usage to ensure compliance
-- Audio and Video Content Sales and Rentals can be used on up to five computers and any number of devices that are synced to those computers
+- Customers must be at least 13 years old to create an account and use the Services
+- Usage Rules must be followed, including using the Services and Content only for personal, noncommercial purposes
+- Customers can cancel their orders within 14 days of receiving their receipt
+- Apple will reimburse customers within 14 days of receiving the cancellation notice
+- Apple's Services and Content are subject to certain security measures and must be accessed using Apple's software
 - Content rentals must be played within 30 days and completed within 48 hours
-- Purchased Content may be removed from the Services and Apps include in-app purchases, extensions, stickers, and subscriptions
-- Apple Music allows streaming on one device at a time for an Individual membership and up to six devices for a Family membership
-- Apple Arcade Apps can only be downloaded with a valid trial or subscription and will no longer be accessible if the subscription ends
-- Content may be limited in the amount of Content that can be downloaded and some downloaded Content may expire after a given amount of time
-- Subscriptions automatically renew until cancelled and free trials must be cancelled at least 24 hours before the end of the trial
-- Family Sharing allows up to six members to
+- Subscriptions and downloads may be limited and some Content may expire after a given amount of time
+- Paid Subscriptions automatically renew until cancelled, and users will be notified if the price increases
+- Family Sharing allows up to six members of a family to share eligible content
+- Series Pass and Multi-Pass allow users to purchase and receive television content as it becomes available
+- iCloud Music Library is an Apple Music feature that allows users to access their matched or uploaded songs, playlists and music videos from Apple Music
+- This Agreement constitutes the entire agreement between you and Apple and governs your use of the Services, superseding any prior agreements
