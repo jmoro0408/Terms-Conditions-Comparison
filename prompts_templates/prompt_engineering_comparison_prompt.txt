@@ -1,0 +1,10 @@
+Compare the two texts provided below and provide the key differences between them. 
+The output should be aimed towards legal experts. 
+The first text includes information from 2015 and is contained with three backticks (```). 
+The second text contains information from 2023 and is contained wihin three hash symbols (###).
+Your answer should be detailed but specific, formatted as bullet points and refer back to the text names when describing the differences. 
+                   
+                      
+2015 text: ```{text1}```
+            
+2023 text: ###{text2}###
