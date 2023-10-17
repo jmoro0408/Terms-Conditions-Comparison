@@ -1,13 +1,17 @@
 Here are some key differences between the 2015-TandCS and 2023-TandCS:
 
-1. Scope: The 2015-TandCS specifically cover the use of the iTunes Store Service provided by iTunes SARL, while the 2023-TandCS cover the use of the Mac App Store, App Store, and iBooks Store, as well as purchasing licenses from these stores.
+1. Services Offered: The 2015-TandCS focus on the terms and conditions for purchasing and accessing digital content through the iTunes Store Service, while the 2023-TandCS mention various services offered by Apple, such as the App Store, Apple Music, Apple TV, Apple Books, Apple Podcasts, and Apple Fitness+.
 
-2. Content: The 2015-TandCS cover details about content availability, use of content, usage rules, content security, and service security. The 2023-TandCS include terms and conditions for using iBooks Store Products, including usage rules and restrictions.
+2. Payment and Transactions: The 2015-TandCS include details about purchasing products, cancellations, refunds, and Family Sharing, while the 2023-TandCS state that Apple will charge the user's selected payment method for any paid transactions. It also covers payment, taxes, and refunds related to the services and content.
 
-3. Age Requirement: Both agreements state that users must be at least 13 years old to create an account. However, the 2015-TandCS specify that users under 13 must have an account created by a parent or legal guardian. The 2023-TandCS state that users under 18 must review the agreement with a parent or guardian.
+3. User Responsibilities: The 2023-TandCS mention that users are responsible for maintaining the confidentiality and security of their Apple ID. They must also comply with the Submission Guidelines when submitting materials to Apple's services.
 
-4. Location: The 2015-TandCS state that the iTunes Store Service is only available in the United Kingdom. The 2023-TandCS do not specify a specific location.
+4. Licensing and In-App Purchases: The 2015-TandCS emphasize the licensing of products to users, while the 2023-TandCS state that apps are licensed, not sold, to users by Apple or third-party developers. Apps may offer in-app purchases, with Apple or the app provider responsible for their maintenance and support.
 
-5. External Services: The 2023-TandCS include terms and conditions for using information from External Services for general purposes only, such as financial, medical, and location data. The 2015-TandCS do not mention External Services.
+5. Termination and Suspension: The 2023-TandCS mention that Apple can terminate or suspend services if users fail to comply with the agreement. Users may also face data charges incurred in connection with the use of the services.
 
-In addition to these differences, the 2023-TandCS also cover topics such as payment methods, cancellation policy, usage limitations, travel restrictions, family sharing, app licenses, and governing laws. It is important to review each agreement in its entirety to fully understand the terms and conditions.
+6. Governing Laws: The 2015-TandCS do not specify the governing laws, while the 2023-TandCS state that the agreement is governed by the laws of the State of California, unless the user is not a U.S. citizen or resides outside the U.S. Users must also comply with all local, state, federal, and national laws that apply to their use of the services.
+
+7. Notifications and Updates: The 2023-TandCS mention that Apple may notify users about the services via email, postal mail, or by posting on the services. Apple also reserves the right to modify the agreement and add new terms or conditions for the use of its services.
+
+Please note that these are just some of the key differences based on the provided context, and there may be additional details and distinctions within the agreements.

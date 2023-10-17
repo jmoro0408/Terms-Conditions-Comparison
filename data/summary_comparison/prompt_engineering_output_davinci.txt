@@ -1,19 +1,13 @@
 
 
-Key Differences Between 2015 and 2023 Texts:
-- 2015 text: 
-    - Outlines rules and responsibilities of family sharing and electronic contracting
-    - Only available in the United Kingdom
-    - Refunds available as per the refund policy
-    - HD products can only be viewed on HD-capable devices
-    - iTunes reserves the right to modify, suspend, or discontinue the service anytime without liability
-    - Governed by English law
-- 2023 text:
-    - Outlines terms and conditions for using Apple's Services such as the App Store, Apple Music, Apple TV, among others
-    - Family Sharing feature allows up to six family members to share eligible subscriptions
-    - Ask to Buy feature requires organizers to approve transactions initiated by underage family members
-    - Series Pass and Multi-Pass allow users to purchase and receive TV content as it becomes available
-    - App licenses are provided by Apple or a third party developer, and apps may offer In-App Purchases
-    - iCloud Music Library for Apple Music members and Apple Fitness+ is for entertainment, not medical advice
-    - Apple offers options for carrier membership
-    - Governed by laws of the State of California, excluding conflicts of law provisions
+Key Differences between 2015 Text and 2023 Text:
+- 2015 Text: 
+    - Focuses on the iTunes Store Service 
+    - Governs the use of the iTunes Store Service, Mac App Store, App Store, and iBooks Store
+    - Only available to users in the UK
+    - Users must be 13 years or older
+- 2023 Text: 
+    - Focuses on Apple's Services such as the App Store, Apple Music, Apple TV, and others
+    - Governs the use of Apple's Services
+    - Availability of services and content may vary by country
+    - Users must be at least 13 years old to create accounts
