@@ -1,32 +1,25 @@
-- The agreement outlines terms and conditions for using Apple's Services such as the App Store, Apple Music, Apple TV, among others.
-- The services require compatible hardware, software, and internet access and are available in the user's country of residence.
-- Users can purchase content either for free or for a charge, with Apple charging the user's selected payment method, including taxes.
-- If the primary payment method fails, Apple can attempt to charge other eligible payment methods.
-- Users can cancel their orders within 14 days of receiving their receipt.
-- The usage of services and content must be for personal, noncommercial purposes, and users can use content from up to five different Apple IDs on each device.
-- Users can have up to 10 devices signed in with their Apple ID at one time.
-- Violation of these rules can lead to a breach of the agreement.
-- Users may be limited in the amount of content they can download and some downloaded content may expire after a certain time.
-- The services may allow users to purchase access to content on a subscription basis, which automatically renews until cancelled.
-- Some services and content may not be available when traveling outside of the user's home country.
-- Use of the services on non-Apple-branded devices may limit access to some features.
-- Apple's Services allow users to post a variety of materials, provided they comply with Submission Guidelines.
-- Users grant Apple a non-exclusive license to use the materials they submit.
-- Apple has the right to monitor and remove any material that violates the guidelines.
-- Family Sharing feature allows up to six family members to share eligible subscriptions.
-- Family organizer, who must be 18 years or older, is responsible for all family transactions.
-- The Ask to Buy feature requires organizers to approve transactions initiated by underage family members.
-- Apple's Series Pass and Multi-Pass allow users to purchase and receive TV content as it becomes available.
-- If fewer episodes are delivered than planned, Apple will credit the user's account.
-- App licenses are provided by Apple or a third party developer, and apps may offer In-App Purchases.
-- In-App Purchases cannot be transferred among devices and can only be downloaded once.
-- Apps are licensed, not sold, to users and the license is subject to the End User License Agreement.
-- The agreement covers terms regarding data use, agreement termination, warranty, liability limitation, and export restrictions.
-- The agreement is governed by California state laws unless the user resides in a different country, in which case that country's laws apply.
-- Apple's terms and conditions state that some content from Apple Books, App Store, and Apple Podcasts are acquired from third-party providers, with Apple acting as an agent for the provider.
-- Apple offers iCloud Music Library for Apple Music members and Apple Fitness+ is for entertainment, not medical advice.
-- The company offers options for carrier membership, where the wireless carrier is the merchant of record.
-- Apple reserves the right to modify their agreement and terms of use at any time and is not responsible for third-party materials or copyright infringement by users.
-- The terms outline termination and suspension guidelines for services, disclaimers of warranties, and liability limitations.
-- The agreement is governed by laws of the State of California, excluding conflicts of law provisions.
-- The terms also outline statutory exceptions for public institutions, governing law and jurisdiction provisions, and other miscellaneous terms.
+- The agreement details the terms and conditions for using Apple's Services such as the App Store, Apple Music, Apple TV, and others.
+- Users can purchase, rent, or subscribe to content provided by Apple or a third party through these services.
+- The agreement covers payment, taxes, and refunds, stating that Apple will charge the user's selected payment method for any paid transactions.
+- Users are responsible for maintaining the confidentiality and security of their Apple ID.
+- The services and content must be used for personal, noncommercial purposes and users may not tamper with or circumvent any security technology included with the services or content.
+- Subscriptions automatically renew until cancelled as per the agreement.
+- The availability of services and content may vary by country.
+- Apple's services allow users to submit various types of materials, which must comply with their Submission Guidelines.
+- Users grant Apple a worldwide, nonexclusive license to use these submitted materials.
+- Apple's Family Sharing feature allows up to six family members to share eligible subscriptions and purchases, with the organizer responsible for all transactions.
+- Apple offers Series Pass and Multi-Pass for purchasing television content.
+- Apps are licensed, not sold, to users by Apple or a third-party developer.
+- Apps may offer in-app purchases, with Apple or the app provider responsible for their maintenance and support.
+- The agreement includes terms for data use, termination, external services, warranties, and liability limitations.
+- The agreement is governed by the laws of the State of California, unless the user is not a U.S. citizen or resides outside the U.S.
+- Apple's terms state that some content on Apple Books, App Store, and Apple Podcasts comes from third-party providers, for which Apple acts as an agent and is not responsible for the content, warranties, or related claims.
+- Apple Music's iCloud Music Library feature allows users to access their music on Apple devices, with a limit of 100,000 songs that can be uploaded, excluding iTunes Store songs.
+- Apple Fitness+ is intended for entertainment and information, not medical advice.
+- Apple can modify the agreement and add new terms or conditions for the use of its Services, and is not responsible for third-party materials linked from the Content or the Services.
+- All Apple's services, including content, graphics, user interface, audio and video clips, editorial content, and the software used to implement the Services, are proprietary and protected by intellectual property laws.
+- Apple can terminate or suspend services if users fail to comply with the agreement, and is not responsible for data charges incurred in connection with the use of the Services.
+- The agreement is governed by the laws of the State of California and constitutes the entire agreement between the user and Apple, superseding any prior agreements.
+- Users must comply with all local, state, federal, and national laws that apply to their use of the Services.
+- Apple may notify users about the Services via email, postal mail, or by posting on the Services, and users grant Apple the right to enforce and verify compliance with the agreement.
+- The terms were last updated on 12 September 2022.

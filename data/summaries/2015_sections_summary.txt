@@ -1,36 +1,38 @@
-- Users must pay for all products purchased through the iTunes store and provide a valid payment method.
-- Purchases can be cancelled within 14 days of receipt, except for iTunes gifts which cannot be refunded once the code is redeemed.
-- If a product becomes unavailable after purchase but before download, the user is entitled to a refund of the price paid.
-- Pre-orders can be cancelled before the product becomes available.
-- iTunes reserves the right to change product prices at any time and does not offer refunds in the event of a price drop or promotional offering after purchase.
-- iTunes gift certificates, cards, and codes cannot be redeemed for cash or returned for a cash refund.
-- The policy also outlines the rules and responsibilities of family sharing and electronic contracting.
-- The legal agreement outlines the terms and conditions of use for the iTunes Store Service provided by iTunes SARL.
-- Only individuals aged 13 years or older can create accounts, those under 13 must have an account created by a parent or legal guardian.
-- The service is only available in the United Kingdom.
-- Users are responsible for maintaining the security of their account and for all activities that occur through their account.
-- iTunes Products can be purchased and downloaded once the user has authenticated their account using their Apple ID and password.
-- The agreement covers details about content availability, use of content, usage rules, content security and service security, and the iTunes Match service.
-- iTunes charges the full amount for Season Pass or Multi-Pass upon purchase, refunds available as per the refund policy.
-- Users must download remaining Pass content within 90 days of availability.
-- Automatic renewal charges full price for each Multi-Pass cycle unless cancelled prior to the next cycle.
-- HD Products can only be viewed on HD-capable devices.
-- Users are responsible for any material they submit to the service, granting iTunes a worldwide, royalty-free, nonexclusive license to use these materials.
-- iTunes reserves the right to modify, suspend, or discontinue the service anytime without liability.
-- In case of breach of agreement, iTunes can terminate the agreement and/or user account.
-- iTunes is not responsible for third-party materials or websites.
-- The service and its contents are copyrighted and protected by intellectual property laws.
-- The agreement can be modified by iTunes anytime and the changes will be effective immediately after user acceptance.
-- The service is operated by iTunes from Luxembourg and is governed by English law.
-- Users agree to comply with all applicable laws and regulations.
-- The document is a legal agreement between the user and iTunes SARL for the use of the Mac App Store, App Store, and iBooks Store, and for purchasing licenses from these stores.
-- The agreement outlines the requirements for account use and security, product purchasing and downloading, delivery of updates, and downloading previous purchases.
-- It covers aspects such as privacy, intellectual property rights, termination of the agreement, disclaimers of warranties, and liability limitations.
-- Users must be at least 13 years old to create an account, and those under 18 must review the agreement with a parent or guardian.
-- The agreement can be modified by iTunes at any time, and changes will be communicated to the user.
-- iTunes may disclose user information to law enforcement if necessary.
-- Licensing for products purchased, including software from Apple and third-party developers, in-app purchases, subscriptions, and product usage rules are covered.
-- The document includes terms and conditions for using information from External Services for general purposes only, such as financial, medical, and location data.
-- Usage of content in External Services should align with EULA terms, and users are responsible for complying with local laws when accessing these services.
-- The Licensor can change or disable access at any time and makes no warranties regarding uninterrupted or error-free service.
-- The agreement also contains terms and conditions for using iBooks Store Products, including usage rules and restrictions.
+- The policy details terms and conditions for purchasing products through iTunes.
+- Customers are responsible for all payments, including taxes and late fees, and must provide a valid payment method.
+- Purchases can be cancelled within 14 days of receipt, except for iTunes Gifts.
+- If a product becomes unavailable after purchase but before download, the customer may be eligible for a refund.
+- iTunes reserves the right to change product prices at any time.
+- Gift certificates and codes are not redeemable for cash and cannot be returned for a cash refund.
+- Pre-orders authorize iTunes to charge the customer's account and download the product when it becomes available.
+- Family Sharing allows customers to share eligible products with up to six family members.
+- The policy also includes safety information and details about electronic contracting.
+- The legal agreement governs the use of the iTunes Store Service, which allows users to access, purchase or rent digital content for end user use only.
+- The service is only available to users in the UK, requires compatible devices, internet access, and certain software, and users must be 13 years or older.
+- Users are responsible for maintaining the confidentiality of their account information and for any materials they submit to the service.
+- The agreement covers automatic delivery and downloading of previous purchases, use of iTunes Match, privacy policies, content availability, usage rules, content and service security.
+- Full payment for Season Pass or Multi-Pass is charged upon purchase and refunds are only available as per the refund policy. Users must download any remaining Pass content within 90 days after the final content becomes available.
+- If automatic renewal is selected, users will be charged the full price of each subsequent Multi-Pass cycle unless cancelled prior to the beginning of the next cycle.
+- The agreement also covers the use of HD products, user submissions to the service, third-party materials, objectionable material, and intellectual property rights.
+- iTunes reserves the right to modify, suspend, or discontinue the service at any time without liability. If users fail to comply with the agreement, iTunes may terminate the agreement and/or the user's account.
+- iTunes provides the service with reasonable care and skill but does not make any other promises or warranties about the service.
+- The agreement can be modified by iTunes at any time, and new or additional terms or conditions can be imposed on the use of the service.
+- The service is operated by iTunes from its offices in Luxembourg and is governed by English law.
+- The legal agreement governs the use of the Mac App Store, App Store, and iBooks Store, and the purchase of licenses from them.
+- Users must be at least 13 years old to create accounts and the stores are only available in the UK.
+- Users are responsible for maintaining the confidentiality of their account information.
+- The agreement covers various aspects including automatic delivery and downloading, privacy, content security, store security, intellectual property, termination, disclaimer of warranties, liability limitations, and changes.
+- iTunes operates from Luxembourg and users must comply with all relevant laws.
+- iTunes may disclose user information to law enforcement or third parties if necessary.
+- The licensing of software products from the Mac App Store and App Store are divided into Apple Products and Third-Party Products.
+- Users acknowledge that they are entering into a binding agreement with the publisher of Third-Party Products.
+- iTunes is not liable for any loss, destruction, or damage of consumable In-App Purchases.
+- iTunes is responsible for maintenance and support services for Apple Products only.
+- Products are licensed, not sold, to users.
+- The agreement covers the collection and use of user data, termination of the license, and use of third-party services and materials.
+- The terms and conditions for using External Services include financial, medical, and location data.
+- Users should not rely on this information for investment, medical, or precise location purposes without consulting a professional.
+- Users agree not to misuse the proprietary content, information, or materials provided by the External Services.
+- The Licensor reserves the right to change, suspend, or disable access to any External Services without notice.
+- The user is prohibited from exporting or re-exporting the Licensed Application without authorization.
+- The document also outlines the terms and conditions for purchasing and using iBooks Store Products.
