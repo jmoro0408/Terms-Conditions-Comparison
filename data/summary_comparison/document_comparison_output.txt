@@ -1,0 +1,13 @@
+Here are some key differences between the 2015-TandCS and 2023-TandCS:
+
+1. Scope: The 2015-TandCS specifically cover the use of the iTunes Store Service provided by iTunes SARL, while the 2023-TandCS cover the use of the Mac App Store, App Store, and iBooks Store, as well as purchasing licenses from these stores.
+
+2. Content: The 2015-TandCS cover details about content availability, use of content, usage rules, content security, and service security. The 2023-TandCS include terms and conditions for using iBooks Store Products, including usage rules and restrictions.
+
+3. Age Requirement: Both agreements state that users must be at least 13 years old to create an account. However, the 2015-TandCS specify that users under 13 must have an account created by a parent or legal guardian. The 2023-TandCS state that users under 18 must review the agreement with a parent or guardian.
+
+4. Location: The 2015-TandCS state that the iTunes Store Service is only available in the United Kingdom. The 2023-TandCS do not specify a specific location.
+
+5. External Services: The 2023-TandCS include terms and conditions for using information from External Services for general purposes only, such as financial, medical, and location data. The 2015-TandCS do not mention External Services.
+
+In addition to these differences, the 2023-TandCS also cover topics such as payment methods, cancellation policy, usage limitations, travel restrictions, family sharing, app licenses, and governing laws. It is important to review each agreement in its entirety to fully understand the terms and conditions.
