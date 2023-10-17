@@ -28,9 +28,11 @@ def load_template(template_fname: Union[Path, str]) -> str:
 
 def instantiate_model(model_name: str, **kwargs):
     if model_name == "gpt-4":
-        return ChatOpenAI(model_name="gpt-4", **kwargs)
+        return ChatOpenAI(model_name="gpt-4", temperature=0, **kwargs)
     if model_name == "text-davinci-003":
-        return OpenAI(model="text-davinci-003", **kwargs)
+        return OpenAI(model="text-davinci-003", temperature=0, **kwargs)
+    if model_name == "gpt-3.5-turbo-0613":
+        return ChatOpenAI(model="gpt-3.5-turbo-0613", temperature=0, **kwargs)
 
 
 def map_reduce(
@@ -128,11 +130,11 @@ def map_reduce_sections_2015(
     b_split_2015 = text_splitter.split_documents(b_doc_2015)
     c_split_2015 = text_splitter.split_documents(c_doc_2015)
 
-    output_map_reduce_15_a = map_reduce("gpt-4", a_split_2015, temperature=0)
+    output_map_reduce_15_a = map_reduce("gpt-4", a_split_2015)
 
-    output_map_reduce_15_b = map_reduce("gpt-4", b_split_2015, temperature=0)
+    output_map_reduce_15_b = map_reduce("gpt-4", b_split_2015)
 
-    output_map_reduce_15_c = map_reduce("gpt-4", c_split_2015, temperature=0)
+    output_map_reduce_15_c = map_reduce("gpt-4", c_split_2015)
     sections_2015_summary = (
         output_map_reduce_15_a
         + "\n"
