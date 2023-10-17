@@ -1,12 +1,13 @@
-- The Apple Media Services Terms and Conditions form a contract between the user and Apple and govern the use of services like the App Store, Apple Arcade, Apple Music, and Apple TV.
-- The terms cover payment conditions, subscriptions, content availability, third-party devices, and user submissions. Users are responsible for any uncollected payment amounts.
-- Users need compatible hardware and software to use the services and should be at least 13 years old.
-- Apple's Family Sharing feature allows up to six family members to share eligible subscriptions and content, with the organizer needing to be 18 years or older.
-- Apple offers a Series Pass and Multi-Pass for purchasing TV content, and if a content provider delivers fewer episodes than planned, the value is credited to the user's Apple ID.
-- Apps are licensed to users, and the App Provider is solely responsible for its content, warranties, and any claims that the user may have.
-- In-app purchases are available for certain apps, and Apple is responsible for maintenance and support for Apple Apps only.
-- Third-party content is acquired directly from the provider, who is responsible for the content, any warranties, and any claims.
-- The iCloud Music Library is an Apple Music feature that allows users to access their music, playlists, and videos across all Apple Music-enabled devices, storing up to 100,000 songs.
-- If an Apple Music membership ends, access to the iCloud Music Library will be lost.
-- Apple reserves the right to modify the agreement and the services, and is not responsible for third-party materials.
-- The document also outlines copyright infringement procedures, termination and suspension of services, liability limitations, and governing law.
+- The Apple Media Services Terms and Conditions govern the use of Apple's Services, such as the App Store, Apple Music, and Apple TV.
+- The agreement covers payments, taxes, refunds, account security, privacy, content usage rules, subscriptions, content and service availability, use of third-party devices and equipment, and user submissions.
+- Users are responsible for maintaining account confidentiality and security, adhering to usage restrictions, respecting content download rules, and being aware of the auto-renewal of paid subscriptions.
+- Apple has the right to monitor and remove any user-submitted material that violates their guidelines.
+- Family Sharing allows up to six members to share eligible subscriptions and content. The organizer must be 18 or older and the legal guardian of any members under 13. The organizer is responsible for all transactions initiated by family members.
+- The Ask to Buy feature allows organizers to approve transactions made by family members under 18.
+- App Store terms include licensing, in-app purchases, app maintenance and support, app bundles, and search results and rankings. Apps are licensed, not sold. In-app purchases can't be transferred between devices. Apple or the App Provider are responsible for providing app maintenance and support.
+- The text also covers limitations of liability, consent to use of data, and termination of the license agreement. The governing laws for disputes or claims are specified.
+- Some content in Apple Books, App Store, and Apple Podcasts are acquired directly from third-party providers. In such cases, Apple acts as an agent for the content provider.
+- iCloud Music Library allows Apple Music users to access their music and videos from any Apple-enabled device and can store up to 100,000 songs.
+- Apple Fitness+ is for entertainment and not medical advice. Users can purchase a service membership from their wireless carriers.
+- Apple reserves the right to modify this agreement and the services provided. Users may be liable for breach of this agreement.
+- The agreement is governed by the laws of California, unless the user resides outside of the U.S. This agreement supersedes any prior agreements between the user and Apple.
