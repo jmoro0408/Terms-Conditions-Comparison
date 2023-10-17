@@ -34,9 +34,12 @@ def instantiate_model(model_name: str, **kwargs):
 
 
 def map_reduce(
-    model_name: str, text_split, save_dir: Optional[Union[Path, str]] = None
+    model_name: str, 
+    text_split, 
+    save_dir: Optional[Union[Path, str]] = None, 
+    **kwargs
 ):
-    model = instantiate_model(model_name)
+    model = instantiate_model(model_name, **kwargs)
     map_template_fname = Path("prompts_templates", "map_template.txt")
     map_template = load_template(map_template_fname)
     map_prompt = PromptTemplate.from_template(map_template)
@@ -96,21 +99,48 @@ def main():
     data_2015 = load_document(toc_2015_fname)
     data_2023 = load_document(toc_2023_fname)
 
-    split_2015 = tokenize_document(data_2015, chunk_size=4000, chunk_overlap=0)
-    split_2023 = tokenize_document(data_2023, chunk_size=4000, chunk_overlap=0)
+    # GPT4 map reduce
+    split_2015_gpt4 = tokenize_document(data_2015, chunk_size=4000, chunk_overlap=0)
+    split_2023_gpt4 = tokenize_document(data_2023, chunk_size=4000, chunk_overlap=0)
+    gpt4_2015_mp_fname = Path(SUMMARY_SAVE_DIR, "gpt4_map_reduce_summarized_2015.txt")
+    gpt4_2023_mp_fname = Path(SUMMARY_SAVE_DIR, "gpt4_map_reduce_summarized_2023.txt")
+    if not gpt4_2015_mp_fname.exists():
+        map_reduce(
+            "gpt-4",
+            split_2015_gpt4,
+            save_dir=gpt4_2015_mp_fname, 
+            temperature = 0
+        )
+    if not gpt4_2023_mp_fname.exists():
+        map_reduce(
+            "gpt-4",
+            split_2023_gpt4,
+            save_dir=gpt4_2015_mp_fname,
+            temperature = 0
+        )
 
-    print("Map Reduce 2015 running...")
-    output_map_reduce_15 = map_reduce(
-        "gpt-4",
-        split_2015,
-        save_dir=Path(SUMMARY_SAVE_DIR, "gpt4_map_reduce_summarized_2015.txt"),
-    )
-    print("Map Reduce 2023 running...")
-    output_map_reduce_23 = map_reduce(
-        "gpt-4",
-        split_2023,
-        save_dir=Path(SUMMARY_SAVE_DIR, "gpt4_map_reduce_summarized_2023.txt"),
-    )
+    ## Davinci
+    split_2015_davinci = tokenize_document(data_2015, chunk_size=1000, chunk_overlap=0)
+    split_2023_davinci = tokenize_document(data_2023, chunk_size=1000, chunk_overlap=0)
+    davinci_2015_mp_fname = Path(SUMMARY_SAVE_DIR, "davinci_map_reduce_summarized_2015.txt")
+    davinci_2023_mp_fname = Path(SUMMARY_SAVE_DIR, "davinci_map_reduce_summarized_2023.txt")
+    if not davinci_2015_mp_fname.exists():
+        map_reduce(
+            "text-davinci-003",
+            split_2015_davinci,
+            save_dir=davinci_2015_mp_fname, 
+            temperature = 0, 
+            max_tokens=1000
+        )
+
+    if not davinci_2023_mp_fname.exists():
+        map_reduce(
+            "text-davinci-003",
+            split_2023_davinci,
+            save_dir=davinci_2023_mp_fname,
+            temperature = 0, 
+            max_tokens=1000
+        )
 
 
 if __name__ == "__main__":
