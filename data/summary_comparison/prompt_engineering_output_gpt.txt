@@ -1,12 +1,19 @@
 Differences between the 2015 and 2023 texts:
 
-- The 2015 text specifically refers to the iTunes Store Service provided by iTunes SARL, while the 2023 text outlines terms and conditions for using Apple's Services such as the App Store, Apple Music, and Apple TV.
-- The 2015 text states that the service is only available in the United Kingdom, while the 2023 text mentions that the services are available in the user's country of residence.
-- The 2015 text includes specific details about purchasing and downloading iTunes Products, while the 2023 text provides more general information about purchasing content either for free or for a charge.
-- The 2015 text mentions the availability of HD Products that can only be viewed on HD-capable devices, while the 2023 text states that use of the services on non-Apple-branded devices may limit access to some features.
-- The 2015 text includes information about the rules and responsibilities of family sharing and electronic contracting, while the 2023 text mentions the Family Sharing feature that allows up to six family members to share eligible subscriptions.
-- The 2015 text outlines terms and conditions for using information from External Services for general purposes only, such as financial, medical, and location data, while the 2023 text mentions that Apple's Services allow users to post a variety of materials, provided they comply with Submission Guidelines.
-- The 2015 text mentions that the agreement is governed by English law and operated by iTunes from Luxembourg, while the 2023 text states that the agreement is governed by California state laws unless the user resides in a different country, in which case that country's laws apply.
-- The 2015 text includes specific details about licensing for products purchased, including software from Apple and third-party developers, in-app purchases, subscriptions, and product usage rules, while the 2023 text mentions that app licenses are provided by Apple or a third-party developer and apps may offer In-App Purchases.
-- The 2015 text includes terms and conditions for using iBooks Store Products, while the 2023 text states that some content from Apple Books, App Store, and Apple Podcasts are acquired from third-party providers, with Apple acting as an agent for the provider.
-- The 2015 text mentions that iTunes reserves the right to modify, suspend, or discontinue the service anytime without liability, while the 2023 text states that Apple reserves the right to modify their agreement and terms of use at any time and is not responsible for third-party materials or copyright infringement by users.
+- The 2015 text specifically mentions iTunes as the platform for purchasing products, while the 2023 text includes a broader range of services such as the App Store, Apple Music, Apple TV, and others.
+- The 2015 text mentions that customers are responsible for all payments, including taxes and late fees, while the 2023 text specifies that Apple will charge the user's selected payment method for any paid transactions.
+- The 2015 text allows purchases to be cancelled within 14 days of receipt, except for iTunes Gifts, while the 2023 text does not mention a specific cancellation period.
+- The 2015 text mentions that iTunes reserves the right to change product prices at any time, while the 2023 text does not include this specific provision.
+- The 2015 text includes information about Family Sharing, which allows customers to share eligible products with up to six family members, while the 2023 text also mentions this feature.
+- The 2015 text states that the service is only available to users in the UK, while the 2023 text mentions that the availability of services and content may vary by country.
+- The 2015 text mentions the use of iTunes Match, while the 2023 text does not include this specific service.
+- The 2015 text includes provisions about HD products, user submissions to the service, third-party materials, objectionable material, and intellectual property rights, while the 2023 text also includes similar provisions but in a more concise manner.
+- The 2015 text mentions that iTunes operates from Luxembourg, while the 2023 text does not include this specific information.
+- The 2015 text includes provisions about the licensing of software products from the Mac App Store and App Store, while the 2023 text also includes similar provisions but in a more concise manner.
+- The 2015 text mentions the terms and conditions for using External Services, including financial, medical, and location data, while the 2023 text also includes similar provisions but in a more concise manner.
+- The 2015 text includes provisions about the export or re-export of the Licensed Application without authorization, while the 2023 text does not include this specific provision.
+- The 2015 text mentions the terms and conditions for purchasing and using iBooks Store Products, while the 2023 text also includes similar provisions but in a more concise manner.
+- The 2023 text includes specific provisions about Apple Music's iCloud Music Library feature, Apple Fitness+, and the ability to notify users about the Services via email, postal mail, or by posting on the Services, which are not mentioned in the 2015 text.
+- The 2023 text specifies that the agreement is governed by the laws of the State of California, unless the user is not a U.S. citizen or resides outside the U.S., while the 2015 text mentions that the agreement is governed by English law.
+- The 2023 text includes a provision that users must comply with all local, state, federal, and national laws that apply to their use of the Services, which is not mentioned in the 2015 text.
+- The 2023 text mentions that the terms were last updated on 12 September 2022, while the 2015 text does not include this specific information.
