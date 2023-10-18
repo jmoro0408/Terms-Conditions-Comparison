@@ -1,0 +1,11 @@
+You are an expert lawyer with a speciality in contract law. 
+Please provide advice on what a common standardised format would look like for the 
+following texts. The format should include sections with headings with a brief description of the section 
+and should capture all the information present in both texts. 
+The first text includes information from 2015 and is contained with three backticks (```). 
+The second text contains information from 2023 and is contained wihin three hash symbols (###).
+
+                      
+2015 text: ```{text1}```
+            
+2023 text: ###{text2}###
