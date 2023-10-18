@@ -21,7 +21,7 @@ def load_document(document_fname: Union[Path, str]) -> list[Document]:
 
 
 def load_template(template_fname: Union[Path, str]) -> str:
-    with open(template_fname, "r") as f:
+    with open(template_fname, "r", encoding="utf-8") as f:
         template = f.read()
     return template
 
@@ -75,7 +75,7 @@ def map_reduce(
     )
     output = map_reduce_chain.run(text_split)
     if save_dir is not None:
-        with open(save_dir, "w") as f:
+        with open(save_dir, "w", encoding="utf-8") as f:
             f.write(output)
         return output
     return output
@@ -143,7 +143,7 @@ def map_reduce_sections_2015(
         + output_map_reduce_15_c
     )
     if save_dir is not None:
-        with open(save_dir, "w") as f:
+        with open(save_dir, "w", encoding="utf-8") as f:
             f.write(sections_2015_summary)
         return sections_2015_summary
     return sections_2015_summary
@@ -199,7 +199,7 @@ def map_reduce_sections_2023(
     )
 
     if save_dir is not None:
-        with open(save_dir, "w") as f:
+        with open(save_dir, "w", encoding="utf-8") as f:
             f.write(sections_2023_summary)
         return sections_2023_summary
     return sections_2023_summary

@@ -1,7 +1,8 @@
 from pathlib import Path
 
 from dotenv import load_dotenv
-from langchain.prompts.chat import ChatPromptTemplate, HumanMessagePromptTemplate
+from langchain.prompts.chat import (ChatPromptTemplate,
+                                    HumanMessagePromptTemplate)
 
 from create_summaries import instantiate_model, load_template
 
@@ -15,6 +16,7 @@ def create_prompt():
     human_message_prompt = HumanMessagePromptTemplate.from_template(query)
     chat_prompt = ChatPromptTemplate.from_messages([human_message_prompt])
     return chat_prompt
+
 
 def main():
     load_dotenv()
@@ -31,17 +33,20 @@ def main():
     if not gpt35_standardisation_fname.exists():
         gpt35 = instantiate_model("gpt-3.5-turbo-0613")
         gpt35_output = gpt35(
-            chat_prompt.format_prompt(text1=section_2015, text2=section_2023).to_messages()
+            chat_prompt.format_prompt(
+                text1=section_2015, text2=section_2023
+            ).to_messages()
         )
         with open(gpt35_standardisation_fname, "w", encoding="utf-8") as f:
             f.write(gpt35_output.content)
-
 
     gpt4_standardisation_fname = Path(SAVE_DIR, "gpt4_standardisation_advice.txt")
     if not gpt4_standardisation_fname.exists():
         gpt4 = instantiate_model("gpt-4")
         gpt4_output = gpt4(
-            chat_prompt.format_prompt(text1=section_2015, text2=section_2023).to_messages()
+            chat_prompt.format_prompt(
+                text1=section_2015, text2=section_2023
+            ).to_messages()
         )
         with open(gpt4_standardisation_fname, "w", encoding="utf-8") as f:
             f.write(gpt4_output.content)

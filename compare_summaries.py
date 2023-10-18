@@ -7,7 +7,8 @@ from langchain.agents import AgentType, Tool, initialize_agent
 from langchain.chains import RetrievalQA
 from langchain.document_loaders import TextLoader
 from langchain.embeddings.openai import OpenAIEmbeddings
-from langchain.prompts.chat import ChatPromptTemplate, HumanMessagePromptTemplate
+from langchain.prompts.chat import (ChatPromptTemplate,
+                                    HumanMessagePromptTemplate)
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores import FAISS
 from pydantic.v1 import BaseModel, Field
