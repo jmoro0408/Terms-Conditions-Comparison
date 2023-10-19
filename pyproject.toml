@@ -22,6 +22,8 @@ faiss-cpu = "^1.7.4"
 huggingface-hub = "<0.18.0"
 transformers = "^4.34.0"
 sumy = "^0.11.0"
+plotly = "5.17.0"
+kaleido = "0.2.1"
 
 
 [build-system]
