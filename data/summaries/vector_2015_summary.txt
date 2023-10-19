@@ -1,26 +1,26 @@
-- Family Sharing allows users to share eligible iTunes, App Store, Mac App Store, and iBooks Store products with up to six family members.
-- The organizer of the family is responsible for purchases made by family members.
-- Family members can share photos, events, reminders, and location with each other.
-- The organizer can require permission for children under 18 to download products.
-- Leaving or being removed from a family may result in loss of access to shared products and information.
-- Users can only belong to one family at a time and must use the same iTunes Store country or region.
-- iTunes may include materials from third parties and provide links to third-party websites, but is not responsible for their content or accuracy.
-- iTunes does not guarantee the accuracy of product types and descriptions.
-- The Service, including iTunes Products, is protected by intellectual property laws and should not be used in any unauthorized manner.
-- iTunes reserves the right to change or remove content from the Service without notice.
-- iTunes trademarks are protected and cannot be used without permission.
-- Users may be granted limited access to download album cover art for personal, noncommercial use.
-- iTunes may notify users about the service through email, postal mail, or posting on the service.
-- iTunes has the right to disclose user information to law enforcement or third parties if necessary.
-- The license for a Licensed Application on Apple devices is nontransferable and only allows the user to use the application on devices they own or control.
-- The user cannot distribute or make the application available over a network, and cannot rent, sell, or transfer the application.
-- The license prohibits copying, modifying, or creating derivative works of the application.
-- The licensor can collect and use technical data for software updates and support.
-- The license can be terminated if the user fails to comply with the terms.
-- The licensor is not responsible for any offensive or objectionable content in external services and third-party materials.
-- The licensor disclaims any liability for the use of financial, medical, and location information provided by the application.
-- The unauthorized use of proprietary content and materials is prohibited.
-- The licensed application can only be used in accordance with United States law and cannot be exported to certain countries or individuals.
-- The licensed application is subject to copyright laws as a "Commercial Item."
-- The content purchased from the iBooks Store is licensed for personal, noncommercial use and can only be viewed on compatible iOS devices.
-- The document was last updated on January 2, 2015.
+- Apple Family Sharing allows the organizer to remove members, revoking their ability to make authorized purchases and access shared products and information.
+- When a member leaves the group, remaining members may lose access to their products and information.
+- If a member made in-app purchases from another member and then leaves the group, they will need to purchase the app themselves to regain access to those purchases.
+- Users under the age of 13 can only have personal accounts as part of Family Sharing, and deleting the account will terminate their Apple ID and access to associated content.
+- Users can only be part of one family at a time and can change the associated store account every 90 days.
+- Some products and subscriptions may not be eligible for Family Sharing, and Apple can disband a family.
+- Electronic submissions and transactions on the iTunes Store constitute an agreement to be bound by and pay for such transactions.
+- Users are responsible for having the necessary hardware and software to access and retain electronic records.
+- iTunes is not responsible for typographical errors and governs the use of the iTunes Store service.
+- The iTunes Store Service is only available in the United Kingdom and requires compatible devices and internet access.
+- Users are responsible for maintaining the security of their accounts and providing accurate information during registration.
+- The terms and conditions do not apply to App Store Products.
+- Users may incur data charges for downloading large content.
+- App updates may be automatically downloaded and installed.
+- App Bundles may include multiple items, and the displayed price is the price charged upon purchase.
+- The use of Products and the Stores is governed by a license agreement between the user and the publisher.
+- Any violation of the security framework or usage rules may result in consequences.
+- The Stores can only be accessed using software provided by Apple, and unauthorized access may result in legal consequences.
+- Content on iTunes is protected by intellectual property laws and cannot be used or reproduced without permission.
+- iTunes reserves the right to change or remove content without notice.
+- iTunes owns the copyright to the content on iTunes, and unauthorized use may result in penalties.
+- iTunes can terminate the agreement and restrict access to the stores for non-compliance with terms.
+- iTunes has the right to modify or discontinue the stores.
+- The terms of the license govern any upgrades provided by the Licensor.
+- The Licensor may collect and use technical data for software updates and support.
+- The Licensed Application may provide access to external services and websites, and the Licensor is not responsible for their content or quality.
