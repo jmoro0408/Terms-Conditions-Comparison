@@ -1,8 +1,7 @@
 from pathlib import Path
 
 from dotenv import load_dotenv
-from langchain.prompts.chat import (ChatPromptTemplate,
-                                    HumanMessagePromptTemplate)
+from langchain.prompts.chat import ChatPromptTemplate, HumanMessagePromptTemplate
 
 from create_summaries import instantiate_model, load_template
 
