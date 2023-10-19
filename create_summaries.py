@@ -1,6 +1,8 @@
 from pathlib import Path
 from typing import Optional, Union
 
+import numpy as np
+import plotly.graph_objects as go
 from dotenv import load_dotenv
 from langchain.chains import MapReduceDocumentsChain, ReduceDocumentsChain
 from langchain.chains.combine_documents.stuff import StuffDocumentsChain
@@ -8,9 +10,12 @@ from langchain.chains.llm import LLMChain
 from langchain.chat_models import ChatOpenAI
 from langchain.docstore.document import Document
 from langchain.document_loaders import Docx2txtLoader
+from langchain.embeddings import OpenAIEmbeddings
 from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
 from langchain.text_splitter import RecursiveCharacterTextSplitter
+from sklearn.cluster import KMeans
+from sklearn.manifold import TSNE
 
 SUMMARY_SAVE_DIR = Path("data", "summaries")
 DATA_DIR = Path("data", "raw")
@@ -205,6 +210,146 @@ def map_reduce_sections_2023(
     return sections_2023_summary
 
 
+def summarize_with_vectors(
+    model_name: str,
+    document_split: list[Document],
+    num_clusters: int,
+    save_dir: Optional[Union[Path, str]] = None,
+):
+    """
+    Interesting approach to summarizing large documents, inspired from this blog post:
+
+    https://pashpashpash.substack.com/p/tackling-the-challenge-of-document
+
+    """
+    llm = ChatOpenAI(model_name=model_name)
+
+    map_template_fname = Path("prompts_templates", "map_template.txt")
+    map_template = load_template(map_template_fname)
+    map_prompt = PromptTemplate.from_template(map_template)
+
+    reduce_template_fname = Path("prompts_templates", "reduce_template.txt")
+    reduce_template = load_template(reduce_template_fname)
+    reduce_prompt = PromptTemplate.from_template(reduce_template)
+
+    embeddings = OpenAIEmbeddings()
+    vectors = np.array(
+        embeddings.embed_documents([x.page_content for x in document_split])
+    )
+    kmeans = KMeans(n_clusters=num_clusters, random_state=42, n_init="auto").fit(
+        vectors
+    )
+    # Find the closest embeddings to the centroids
+
+    closest_indices = []
+
+    for i in range(num_clusters):
+        # Get the list of distances from that particular cluster center
+        distances = np.linalg.norm(vectors - kmeans.cluster_centers_[i], axis=1)
+
+        # Find the list position of the closest one (using argmin to find the smallest distance)
+        closest_index = np.argmin(distances)
+
+        # Append that position to your closest indices list
+        closest_indices.append(closest_index)
+    selected_indices = sorted(closest_indices)
+    map_chain = LLMChain(llm=llm, prompt=map_prompt)
+    reduce_chain = LLMChain(llm=llm, prompt=reduce_prompt)
+    selected_docs = [document_split[doc] for doc in selected_indices]
+    # Make an empty list to hold your summaries
+    summary_list = []
+
+    # Loop through a range of the lenght of your selected docs
+    for i, doc in enumerate(selected_docs):
+        # Go get a summary of the chunk
+        chunk_summary = map_chain.run([doc])
+
+        # Append that summary to your list
+        summary_list.append(chunk_summary)
+
+    summaries = "\n".join(summary_list)
+
+    # Convert it back to a document
+    summaries = Document(page_content=summaries)
+    output = reduce_chain.run([summaries])
+    if save_dir is not None:
+        with open(save_dir, "w", encoding="utf-8") as f:
+            f.write(output)
+        return output
+    return output
+
+
+def plot_tsne(
+    document_split: list[Document],
+    num_clusters: int,
+    perplexity: int,
+    plot_kwargs: dict,
+    save_dir: Optional[Union[Path, str]] = None,
+):
+    colours = [
+        "maroon",
+        "purple",
+        "green",
+        "blue",
+        "yellow",
+        "black",
+        "aqua",
+        "coral",
+        "darkblue",
+        "darkgreen",
+        "darkmagenta",
+        "darkslateblue",
+        "deeppink",
+        "dimgrey",
+        "indianred",
+        "mediumslateblue",
+        "olivedrab",
+        "orangered",
+        "palevioletred",
+    ]
+    colour_map = dict(enumerate(colours))
+
+    embeddings = OpenAIEmbeddings()
+    vectors = np.array(
+        embeddings.embed_documents([x.page_content for x in document_split])
+    )
+    tsne = TSNE(n_components=2, perplexity=perplexity, random_state=42)
+    reduced_data_tsne = tsne.fit_transform(vectors)
+    kmeans = KMeans(n_clusters=num_clusters, random_state=42, n_init="auto").fit(
+        vectors
+    )
+    kmeans_colours = []
+    for label in kmeans.labels_:
+        kmeans_colours.append(colour_map[label])
+    fig = go.Figure(
+        data=go.Scatter(
+            x=reduced_data_tsne[:, 0],
+            y=reduced_data_tsne[:, 1],
+            marker_color=kmeans_colours,
+            hovertext=kmeans.labels_,
+            mode="markers",
+            name="TSNE Cluster",
+        )
+    )
+    fig.update_layout(
+        template="simple_white",
+        title=plot_kwargs["title"],
+        xaxis_title="TSNE 1",
+        yaxis_title="TSNE 2",
+    )
+    if save_dir is not None:
+        if save_dir.suffix != "":
+            save_dir = Path(
+                save_dir.parent, save_dir.stem
+            )  # Removing suffix if existing
+        save_html = str(save_dir) + ".html"
+        save_png = str(save_dir) + ".png"
+        with open(save_html, "w", encoding="utf-8") as f:
+            f.write(fig.to_html())
+        fig.write_image(save_png)
+    fig.show()
+
+
 def main():
     load_dotenv()
     toc_2015_fname = Path(DATA_DIR, "Jan 2015.docx")
@@ -259,6 +404,52 @@ def main():
     sections_summary_2023_fname = Path(SUMMARY_SAVE_DIR, "2023_sections_summary.txt")
     if not sections_summary_2023_fname.exists():
         map_reduce_sections_2023(data_2023, sections_summary_2023_fname)
+
+    # Vectors and TSNE
+    text_splitter = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
+        chunk_size=750, chunk_overlap=50
+    )
+    ## 2015 Summary
+    split_2015 = text_splitter.split_documents(data_2015)
+    tsne_2015_fname = Path("figures", "tsne_2015_fig.html")
+    plot_kwargs_2015 = {"title": "2015 Contract TSNE Plot"}
+    plot_tsne(
+        split_2015,
+        num_clusters=10,
+        perplexity=20,
+        plot_kwargs=plot_kwargs_2015,
+        save_dir=tsne_2015_fname,
+    )
+
+    vector_2015_summary_fname = Path("data", "summaries", "vector_2015_summary.txt")
+    if not vector_2015_summary_fname.exists():
+        summarize_with_vectors(
+            model_name="gpt-3.5-turbo",
+            document_split=split_2015,
+            num_clusters=5,
+            save_dir=vector_2015_summary_fname,
+        )
+
+    ## 2023 Summary
+    split_2023 = text_splitter.split_documents(data_2023)
+    tsne_2023_fname = Path("figures", "tsne_2023_fig.html")
+    plot_kwargs_2023 = {"title": "2023 Contract TSNE Plot"}
+    plot_tsne(
+        split_2023,
+        num_clusters=10,
+        perplexity=15,
+        plot_kwargs=plot_kwargs_2023,
+        save_dir=tsne_2023_fname,
+    )
+
+    vector_2023_summary_fname = Path("data", "summaries", "vector_2023_summary.txt")
+    if not vector_2023_summary_fname.exists():
+        summarize_with_vectors(
+            model_name="gpt-3.5-turbo",
+            document_split=split_2023,
+            num_clusters=5,
+            save_dir=vector_2023_summary_fname,
+        )
 
 
 if __name__ == "__main__":
