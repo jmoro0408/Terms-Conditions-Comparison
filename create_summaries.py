@@ -22,27 +22,70 @@ DATA_DIR = Path("data", "raw")
 
 
 def load_document(document_fname: Union[Path, str]) -> list[Document]:
+    """Loads a .docx document into a Langchain Document
+
+    Args:
+        document_fname (Union[Path, str]): filepath of .docx
+
+    Returns:
+        list[Document]: Langchain Document
+    """
     return Docx2txtLoader(str(document_fname)).load()  # str reqd for loader
 
 
 def load_template(template_fname: Union[Path, str]) -> str:
+    """Loads a .txt file into a str
+
+    Args:
+        template_fname (Union[Path, str]): filepath of .txt file
+
+    Returns:
+        str: .tt file content
+    """
     with open(template_fname, "r", encoding="utf-8") as f:
-        template = f.read()
-    return template
+        return f.read()
 
 
-def instantiate_model(model_name: str, **kwargs):
+def instantiate_model(model_name: str, **kwargs) -> Union[ChatOpenAI, OpenAI]:
+    """Create a ChatOpenAI or OpenAI object from a model_name
+
+    Args:
+        model_name (str): Model to use. Should be one of "gpt-4",
+        "text-davinci-003", or "gpt-3.5-turbo-0613"
+
+    Returns:
+        Union[ChatOpenAI, OpenAI]: Either ChatOpenAi or OpenAI object depending on the model name provided.
+    """
     if model_name == "gpt-4":
         return ChatOpenAI(model_name="gpt-4", temperature=0, **kwargs)
     if model_name == "text-davinci-003":
         return OpenAI(model="text-davinci-003", temperature=0, **kwargs)
     if model_name == "gpt-3.5-turbo-0613":
         return ChatOpenAI(model="gpt-3.5-turbo-0613", temperature=0, **kwargs)
+    raise NotImplementedError("Supplied model name is not yet implemented.")
 
 
 def map_reduce(
-    model_name: str, text_split, save_dir: Optional[Union[Path, str]] = None, **kwargs
-):
+    model_name: str,
+    text_split: list[Document],
+    save_dir: Optional[Union[Path, str]] = None,
+    **kwargs
+) -> str:
+    """Map reduce summarisation as implemented here:
+    https://python.langchain.com/docs/modules/chains/document/map_reduce
+
+    Note map_reduce prompt filenames are hardcoded, a "map_template.txt" and
+    "reduce_template.txt" file is expected in the "prompts_templates" folder.
+
+    Args:
+        model_name (str): name of model to use, see instantiate_model func for further info
+        text_split (list[Document]): Input text as langchain Document
+        save_dir (Optional[Union[Path, str]], optional):
+            directory to save summarisation. Defaults to None.
+
+    Returns:
+        str: summary
+    """
     model = instantiate_model(model_name, **kwargs)
     map_template_fname = Path("prompts_templates", "map_template.txt")
     map_template = load_template(map_template_fname)
@@ -89,6 +132,18 @@ def map_reduce(
 def tokenize_document(
     input_document: list[Document], chunk_size: int, chunk_overlap: int
 ):
+    """
+    Tokenizes a document into smaller chunks for processing.
+
+    Args:
+        input_document (list[Document]): List of documents to be tokenized.
+        chunk_size (int): Size of each tokenized chunk.
+        chunk_overlap (int): Overlap between adjacent chunks.
+
+    Returns:
+        list[Document]: List of tokenized document chunks.
+
+    """
     text_splitter = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
         chunk_size=chunk_size, chunk_overlap=chunk_overlap
     )
@@ -96,6 +151,19 @@ def tokenize_document(
 
 
 def string_between_substrings(input_str: str, start: str, end: Optional[str]):
+    """
+    Extracts the substring between 'start' and 'end' within 'input_str'.
+    If 'end' is not provided, it returns the substring starting from 'start'
+    to the end of 'input_str'.
+
+    Args:
+        input_str (str): The input string to search within.
+        start (str): The starting substring.
+        end (Optional[str]): The ending substring (optional).
+
+    Returns:
+        str: The substring between 'start' and 'end' in 'input_str'.
+    """
     if end is None:
         return (input_str.split(start))[1]
     return (input_str.split(start))[1].split(end)[0]
@@ -103,7 +171,18 @@ def string_between_substrings(input_str: str, start: str, end: Optional[str]):
 
 def map_reduce_sections_2015(
     document_2015: list[Document], save_dir: Optional[Union[Path, str]] = None
-):
+) -> str:
+    """
+    Splits the 2015 T&Cs into sections and performs map-reduce summarisation
+
+    Args:
+        document_2015 (list[Document]): 2015 T&Cs as a langchain Document
+        save_dir (Optional[Union[Path, str]], optional): directiory to save summary in.
+            Defaults to None.
+
+    Returns:
+        str: summary text
+    """
     # TODO Lot of repeated code between here and 2023, can be abstracted out
     ## Summary by section
     delimiters_2015 = [
@@ -157,6 +236,16 @@ def map_reduce_sections_2015(
 def map_reduce_sections_2023(
     document_2023: list[Document], save_dir: Optional[Union[Path, str]] = None
 ):
+    """
+    Splits the 2023 T&Cs into sections and performs map-reduce summarisation
+
+    Args:
+        document_2023 (list[Document]): 2023 T&Cs as a langchain Document
+        save_dir (Optional[Union[Path, str]], optional): directiory to save summary in. Defaults to None.
+
+    Returns:
+        str: summary text
+    """
     raw_text_2023 = document_2023[0].page_content
     delimiters_2023 = [
         "A. INTRODUCTION TO OUR SERVICES",
@@ -218,10 +307,20 @@ def summarize_with_vectors(
 ):
     """
     Interesting approach to summarizing large documents, inspired from this blog post:
-
     https://pashpashpash.substack.com/p/tackling-the-challenge-of-document
 
+    Args:
+        model_name (str): The name of the language model to use, shoudl be either
+        "gpt-3.5-turbo-0613" or 'gpt-4'
+        document_split (list[Document]): Langchain document to summarize.
+        num_clusters (int): Number of clusters to create for document grouping.
+        save_dir (Optional[Union[Path, str]]): Optional directory to save the summary.
+
+    Returns:
+        str: The summarized document.
+
     """
+
     llm = ChatOpenAI(model_name=model_name)
 
     map_template_fname = Path("prompts_templates", "map_template.txt")

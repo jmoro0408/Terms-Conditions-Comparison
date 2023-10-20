@@ -1,7 +1,8 @@
 from pathlib import Path
 
 from dotenv import load_dotenv
-from langchain.prompts.chat import ChatPromptTemplate, HumanMessagePromptTemplate
+from langchain.prompts.chat import (ChatPromptTemplate,
+                                    HumanMessagePromptTemplate)
 
 from create_summaries import instantiate_model, load_template
 
@@ -10,8 +11,10 @@ SUMMARIES_DIR = Path("data", "summaries")
 
 
 def create_prompt():
+    """creare a prompt template from a "standardisation_prompt.txt" file
+    in the "prompts_templates" folder
+    """
     query = load_template(Path("prompts_templates", "standardisation_prompt.txt"))
-    # prompt_template = PromptTemplate(input_variables=["text1", "text2"], template=query)
     human_message_prompt = HumanMessagePromptTemplate.from_template(query)
     chat_prompt = ChatPromptTemplate.from_messages([human_message_prompt])
     return chat_prompt

@@ -7,7 +7,8 @@ from langchain.agents import AgentType, Tool, initialize_agent
 from langchain.chains import RetrievalQA
 from langchain.document_loaders import TextLoader
 from langchain.embeddings.openai import OpenAIEmbeddings
-from langchain.prompts.chat import ChatPromptTemplate, HumanMessagePromptTemplate
+from langchain.prompts.chat import (ChatPromptTemplate,
+                                    HumanMessagePromptTemplate)
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores import FAISS
 from pydantic.v1 import BaseModel, Field
@@ -26,9 +27,23 @@ def document_comparison_tool(
     model_name: str,
     sections_2015_fname: Union[Path, str],
     sections_2023_fname: Union[Path, str],
-    query: str,
+    document_comparison_prompt: str,
     save_dir: Optional[Union[Path, str]] = None,
-):
+) -> str:
+    """Langchain document compariosn as implemented here:
+    https://python.langchain.com/docs/integrations/toolkits/document_comparison_toolkit
+
+    Args:
+        model_name (str): model to use, should be one of "gpt-3.5-turbo-0613",
+        "text-davinci-003", or "gpt-4"
+        sections_2015_fname (Union[Path, str]): filepath of 2015 "sections" summary
+        sections_2023_fname (Union[Path, str]): filepath of 2023 "sections" summary
+        document_comparison_prompt (str): prompt to use for document comparison
+        save_dir (Optional[Union[Path, str]], optional): directory to save comparison text. Defaults to None.
+
+    Returns:
+        str: comparison of summaries
+    """
     llm = instantiate_model(model_name)
 
     tools = []
@@ -66,11 +81,13 @@ def document_comparison_tool(
         llm=llm,
         verbose=True,
     )
-    query = "What are the key differences between the 2015-TandCS and 2023-TandCS?"
-    output = agent({"input": query})
+    document_comparison_prompt = (
+        "What are the key differences between the 2015-TandCS and 2023-TandCS?"
+    )
+    output = agent({"input": document_comparison_prompt})
 
     if save_dir is not None:
-        with open(save_dir, "w") as f:
+        with open(save_dir, "w", encoding="utf-8") as f:
             f.write(output["output"])
         return output["output"]
     return output["output"]
@@ -83,10 +100,28 @@ def comparison_prompt_engineering(
     query: str,
     save_dir: Optional[Union[Path, str]] = None,
 ):
+    """
+    Compare two versions of documents using an AI model and retrieve differences.
+
+    Args:
+        model_name (str): The name of the language model to use for comparison.
+        sections_2015_fname (Union[Path, str]): The path or filename of the 2015 document.
+        sections_2023_fname (Union[Path, str]): The path or filename of the 2023 document.
+        query (str): The comparison query to answer.
+        save_dir (Optional[Union[Path, str]]): Optional. If provided, the comparison result will be saved to this file.
+
+    Returns:
+        str: The comparison result as a text string.
+
+    The function loads two documents, splits them into smaller chunks, computes embeddings,
+    and uses a language model to answer the comparison query. It can save the comparison
+    result to a file if the 'save_dir' parameter is provided.
+    """
+
     llm = instantiate_model(model_name)
-    with open(sections_2015_fname, "r") as f:
+    with open(sections_2015_fname, "r", encoding="utf-8") as f:
         section_2015 = f.read()
-    with open(sections_2023_fname, "r") as f:
+    with open(sections_2023_fname, "r", encoding="utf-8") as f:
         section_2023 = f.read()
 
     prompt_template = PromptTemplate(input_variables=["text1", "text2"], template=query)
@@ -106,7 +141,7 @@ def comparison_prompt_engineering(
     else:
         prompt_engineering_output = llm(prompt_template_formatted)
     if save_dir is not None:
-        with open(save_dir, "w") as f:
+        with open(save_dir, "w", encoding="utf-8") as f:
             f.write(prompt_engineering_output)
         return prompt_engineering_output
     return prompt_engineering_output
@@ -126,7 +161,7 @@ def main():
             model_name="gpt-3.5-turbo-0613",
             sections_2015_fname=sections_2015_fname,
             sections_2023_fname=sections_2023_fname,
-            query=query,
+            document_comparison_prompt=query,
             save_dir=document_comparison_save_dir,
         )
 
