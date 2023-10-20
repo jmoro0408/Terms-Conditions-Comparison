@@ -9,7 +9,7 @@ The project is split into 4 parts:
 In order to achieve the primary goal of comparing the differences between the two T&Cs, I first summarised both versions and subsequently compared them.
 
 ## Summarisation 
-The code for this section can be found in `create_summaries.py`, outputs saved to `data/summaries`, and the map/reduce prompts saved in `prompts_templates`.
+**The code for this section can be found in `create_summaries.py`, outputs saved to `data/summaries`, and the map/reduce prompts saved in `prompts_templates`.**
 
 Given two versions of Apple's T&CS (`data/raw`) I attempted to compare contextual differences between them. 
 
@@ -56,7 +56,7 @@ A key benefit of this approach of map-reduce is that the text is only fed into t
 
 
 ## Summary Comparison
-Code for this section can be found in `compare_summaries.py`, and outputs in `data/summary_comparison`. 
+**Code for this section can be found in `compare_summaries.py`, and outputs in `data/summary_comparison`.**
 
 Based on both human review and cosine distance (see Summary Metrics below) the "sections summaries" had performed best in the sumarisation task, and so these were used for comparison. 
 
@@ -69,12 +69,12 @@ The document comparison chain seemed to work best out of both these approaches.
 
 ## Standardisation
 
-Code for this section can be found in `standardisation.py`, and outputs in `data/standardisation`.
+**Code for this section can be found in `standardisation.py`, and outputs in `data/standardisation`.**
 
 In order to produce advice on how the contracts can be standardised into a common format, I fed the "Sections summaries" into GPT-4 and created a prompt (`prompts_templates/standardisation_prompt.txt`) asking to create a standard format that captures all information in both summaries, I also asked the LLM to act as a legal expert with a specialty in contract law, which I found helped increase the quality of the result. 
 
 ## Summary Metrics
-Code for this section can be found in ```6_summary_metrics.ipynb```
+**Code for this section can be found in ```6_summary_metrics.ipynb```**
 
 Industry standard metrics for determinig the quality of text summaries include [ROUGE](https://en.wikipedia.org/wiki/ROUGE_(metric)), [BLEU](https://en.wikipedia.org/wiki/BLEU) or a combination of both.
 
@@ -105,7 +105,7 @@ As expected from human review, the model where sections are manually delineated 
 ## Alternative models and methods
 ### Alternative Models
 
-Code for this section can be found in `4_huggingface_models.ipynb` and `5_traditional_methods.ipynb`. 
+**Code for this section can be found in `4_huggingface_models.ipynb` and `5_traditional_methods.ipynb`.**
 
 I attempted to use some open source models to create summaries, in order to compare to the OpenAI models. Initially I tried to use a model that was a version of BERT fine tuned on legal text (https://huggingface.co/nlpaueb/legal-bert-base-uncased) however this didn't work with HuggingFaceHub, and I don't have enough compute power to run it locally. 
 
