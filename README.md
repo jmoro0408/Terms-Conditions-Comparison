@@ -58,7 +58,7 @@ A key benefit of this approach of map-reduce is that the text is only fed into t
 ## Summary Comparison
 Code for this section can be found in `compare_summaries.py`, and outputs in `data/summary_comparison`. 
 
-Based on my review, the "sections summaries" had performed best in the sumarisation task, and so these were used for comparison. 
+Based on both human review and cosine distance (see Summary Metrics below) the "sections summaries" had performed best in the sumarisation task, and so these were used for comparison. 
 
 With summaries of both the 2015 and 2023 contracts produced, I then utilised langchains document comparison [agent](https://python.langchain.com/docs/integrations/toolkits/document_comparison_toolkit) to compare the two summaries. 
 
@@ -74,17 +74,33 @@ Code for this section can be found in `standardisation.py`, and outputs in (`dat
 In order to produce advice on how the contracts can be standardised into a common format, I fed the "Sections summaries" into GPT-4 and created a prompt (`prompts_templates/standardisation_prompt.txt`) asking to create a standard format that captures all information in both summaries, I also asked the LLM to act as a legal expert with a specialty in contract law, which I found helped increase the quality of the result. 
 
 ## Summary Metrics
-Note there is no code or outputs for this section. 
+Code for this section can be found in ```6_summary_metrics.ipynb```
 
-Typical text summarisation tasks will use [ROUGE](https://en.wikipedia.org/wiki/ROUGE_(metric)), [BLEU](https://en.wikipedia.org/wiki/ BLEU) or a combination of both to quantify how well a summary captures the raw text. 
+Industry standard metrics for determinig the quality of text summaries include [ROUGE](https://en.wikipedia.org/wiki/ROUGE_(metric)), [BLEU](https://en.wikipedia.org/wiki/ BLEU) or a combination of both.
 
-However both of these metrics have downfalls as they both use syntax to calculate their scores, rather than semantic meaning, 
+However these metrics have downfalls as they both use syntax to calculate their scores, rather than semantic meaning, 
 For example the two sentences below have the same meaning, but score only 0.5 (out of 0 - 1) due to their differences in wording:
 1. "The dog slept on the mat", 
 2. "The canine snoozed on the rug"
 
 A better metric may use word embeddings and cosine similarity to determine a score. 
 
+In the ```6_summary_metrics.ipynb``` notebook I first load in the full T&Cs for both 2015 and 2023. I then create word embeddings and score these in a ChromaDB vector database. 
+
+I then loop through each version of the summary created in the previous section and create embeddings for each. 
+Finally I calculate cosine distance scores for each summary against the entire text, with a lower score resulting in a more similar text. 
+
+Final results are below:
+
+| Model           | 2015         | 2023         |
+| --------------- | ------------ | ------------ |
+| sections        | 0.1315       | 0.1009       |
+| bart            | 0.3278       | 0.1500       |
+| davinci         | 0.1497       | 0.1691       |
+| gpt             | 0.1340       | 0.1307       |
+| vectors         | 0.2230       | 0.1967       |
+
+As expected from human review, the model where sections are manually delineated produces the best summary. 
 
 ## Alternative models and methods
 ### Alternative Models
