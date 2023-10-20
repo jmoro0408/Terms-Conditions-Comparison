@@ -18,7 +18,7 @@ In order to get round the token limit I used [langchain](https://python.langchai
 
 ### Stuff
 
-I attempted using the (stuff)[https://python.langchain.com/docs/modules/chains/document/stuff] method, however this is better suited for smaller documents and didn't yield useful results (it essentially just said "these are Apple's T&Cs" - a little *too* summarised).
+I attempted using the [stuff](https://python.langchain.com/docs/modules/chains/document/stuff) method, however this is better suited for smaller documents and didn't yield useful results (it essentially just said "these are Apple's T&Cs" - a little *too* summarised).
 
 ### Map reduce
 
@@ -69,21 +69,21 @@ The document comparison chain seemed to work best out of both these approaches.
 
 ## Standardisation
 
-Code for this section can be found in `standardisation.py`, and outputs in (`data/standardisation`).
+Code for this section can be found in `standardisation.py`, and outputs in `data/standardisation`.
 
 In order to produce advice on how the contracts can be standardised into a common format, I fed the "Sections summaries" into GPT-4 and created a prompt (`prompts_templates/standardisation_prompt.txt`) asking to create a standard format that captures all information in both summaries, I also asked the LLM to act as a legal expert with a specialty in contract law, which I found helped increase the quality of the result. 
 
 ## Summary Metrics
 Code for this section can be found in ```6_summary_metrics.ipynb```
 
-Industry standard metrics for determinig the quality of text summaries include [ROUGE](https://en.wikipedia.org/wiki/ROUGE_(metric)), [BLEU](https://en.wikipedia.org/wiki/ BLEU) or a combination of both.
+Industry standard metrics for determinig the quality of text summaries include [ROUGE](https://en.wikipedia.org/wiki/ROUGE_(metric)), [BLEU](https://en.wikipedia.org/wiki/BLEU) or a combination of both.
 
 However these metrics have downfalls as they both use syntax to calculate their scores, rather than semantic meaning, 
 For example the two sentences below have the same meaning, but score only 0.5 (out of 0 - 1) due to their differences in wording:
 1. "The dog slept on the mat", 
 2. "The canine snoozed on the rug"
 
-A better metric may use word embeddings and cosine similarity to determine a score. 
+A better metric may use word embeddings and cosine similarity to determine a score, as embeddings manage to capture contextual meaning over syntactic similarity. 
 
 In the ```6_summary_metrics.ipynb``` notebook I first load in the full T&Cs for both 2015 and 2023. I then create word embeddings and score these in a ChromaDB vector database. 
 
