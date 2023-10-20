@@ -338,6 +338,7 @@ def plot_tsne(
         yaxis_title="TSNE 2",
     )
     if save_dir is not None:
+        save_dir = Path(save_dir)
         if save_dir.suffix != "":
             save_dir = Path(
                 save_dir.parent, save_dir.stem
