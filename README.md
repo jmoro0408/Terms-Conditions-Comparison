@@ -120,6 +120,6 @@ Before large language models, there were a number of traditional methods capable
 
 3. Luhn - Seems to pull out random text without any context
 
-4. KL-Sum - Even worse than KL-sum
+4. KL-Sum - Luhn
 
 Although I didn't spend much time tuning these methods, they don't show a lot of promise over the use of LLMs. 
